@@ -1,0 +1,224 @@
+@media (max-width: 701px) {
+  .showcase {
+    .top-showcase {
+      padding: 1rem;
+    }
+    .flex-container {
+      padding: 1rem;
+      .text-container {
+        h2 {
+          font-size: 1.8rem;
+          margin: 0 4rem;
+        }
+        p { padding: 1rem 5rem;}
+      }
+    }
+    .container {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      .container-1 {
+        img {
+          margin-right: 6rem;
+        }
+        padding-bottom: 3rem;
+        h2 {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+  main {
+    .background {
+      .flex-box {
+         flex-direction: column-reverse;
+      }
+      .text-box {
+        text-align: center;
+        padding-top: 4rem;
+        p { text-align: center; }
+      }
+    }
+    .section-1 {
+      .flex-section {
+        flex-direction: column;
+        text-align: center;
+        .text-section {
+          margin-left: 0;
+          padding-top: 3rem;
+          text-align: center;
+          p {
+            padding: 1rem 2rem;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  // footer styling
+  .footer {
+    // grid property turned into flex property
+    .footer-grid {
+      display: flex;
+      flex-direction: column-reverse;
+      .img-logo {width: 40%;}
+      .text-footer {
+        .px-1 {
+          margin-right: 6rem;
+        }
+      }
+      .subscribe {
+        margin-bottom: 4rem;
+        p {
+          margin-right: 5rem;
+        }
+        .form {
+          padding-top: 2rem;
+          .input-footer {
+            margin-bottom: 1.5rem;
+          }
+          .btn-footer {
+            margin-left: 7rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  //header styling on 375px device
+  .showcase {
+    // navigation at the top
+    .top-showcase {
+      padding: 2rem 1.5rem;
+      .logo {
+        width: 8rem;
+      }
+      .buttom {
+        .btn-primary {
+          padding: 5px 20px;
+        }
+      }
+    }
+    // container in header with the mockup
+    .flex-container {
+      .text-container {
+        h2 {
+          font-size: 1.8rem;
+          margin: 0;
+          padding: 0 .5rem;
+        }
+        p {
+          padding: 1rem 1rem;
+        }
+      }
+    }
+  }
+
+  // main styling on 375px device
+  main {
+    // top of the first section image
+    .bg-top {
+      background-image: url('../images/bg-section-top-mobile-1.svg');
+      min-height: 20vh;
+    }
+
+    // bottom of the first section image
+    .bg-bottom  {
+      background-image: url('../images/bg-section-bottom-mobile-1.svg');
+      min-height: 9vh;
+    }
+    // first section styling
+    .background {
+      .flex-box {
+        .text-box {
+          h2 {
+            font-size: 1.2rem;
+            font-family: $font-stack;
+          }
+          p {
+            padding: 1rem 0rem;
+          }
+        }
+      }
+    }
+
+       // styling section -2 inherits treats for the first section
+       // and they differ in top and bottom image the curves
+      .section-2 {
+        .top {
+          background-image: url('../images/bg-section-top-mobile-2.svg');
+          min-height: 19vh;
+        }
+        .bottom {
+          background-image: url('../images/bg-section-bottom-mobile-2.svg');
+          min-height: 18vh;
+        }
+      }
+
+      // flowing conversation styling
+      .section-1 {
+        margin-top: 2rem;
+        .flex-section {
+          .text-section {
+            h2 {
+              font-size: 1.2rem;
+            }
+            p {
+              padding: 1rem 0;
+            }
+          }
+        }
+      }
+
+      // section 4 styiling button section
+      .button-container {
+        h2 {
+          font-size: 1.2rem;
+          padding: 2rem 2rem;
+        }
+      }
+  }
+
+  // top curve image in footer
+  .curve-top {
+    background-image: url('../images/bg-footer-top-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 20vh;
+    margin-top: 4rem;
+  }
+
+// footer styling
+  .footer {
+    padding: 2rem;
+    // grid footer container
+    .footer-grid {
+      .img-logo {width: 60%;}
+      .text-footer {
+        // class padding on axis of x in a paragraph
+        .px-1 {
+          font-weight: 600;
+          margin-right: 0;
+        }
+      }
+      // the newsletter subscription styling
+      .subscribe {
+        p {
+          font-weight: 600;
+          margin-right: 0;
+        }
+        .form {
+          .input-footer {
+            padding: 8px 40px;
+          }
+          .btn-footer {
+            margin-left: 10rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+%input {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 8px 15px;
+  font-size: 17px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
+}
+
+.input-footer {
+  @extend %input;
+  margin-right: .5rem;
+}
