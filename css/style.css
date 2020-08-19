@@ -393,5 +393,187 @@ main .button-container h2 {
     margin-left: 10rem;
   }
 }
+@media (max-width: 1441px) {
+  body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h2 {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .showcase .top-showcase {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+  .showcase .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 3rem 0;
+  }
+  .showcase .flex-container .text-container {
+    margin-top: 3rem;
+  }
+  .showcase .flex-container .text-container h2 {
+    font-size: 2.1rem;
+  }
+  .showcase .flex-container .text-container p {
+    padding: 1rem 29rem;
+    margin-bottom: 2rem;
+  }
+  .showcase .flex-container .img-container {
+    margin: 5rem 0;
+  }
+  .showcase .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+  .showcase .container .container-1 img {
+    width: 2rem;
+    margin-right: 8rem;
+  }
+  .showcase .container .container-1 h2 {
+    font-size: 4rem;
+  }
+  .showcase .container .container-1 p {
+    color: grey;
+  }
+
+  main {
+    margin-top: 4rem;
+  }
+  main .bg-top {
+    background-image: url("../images/bg-section-top-desktop-1.svg");
+    min-height: 20vh;
+  }
+  main .bg-bottom {
+    background-image: url("../images/bg-section-bottom-desktop-1.svg");
+    min-height: 20vh;
+  }
+  main .background {
+    background-color: #f5faff;
+    padding: 4rem;
+  }
+  main .background .flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .background .flex-box .text-box h2 {
+    font-size: 1.7rem;
+  }
+  main .background .flex-box .text-box p {
+    padding-top: 1rem;
+  }
+  main .section-2 .top {
+    background-image: url("../images/bg-section-top-desktop-2.svg");
+    min-height: 20vh;
+  }
+  main .section-2 .bottom {
+    background-image: url("../images/bg-section-bottom-desktop-2.svg");
+    min-height: 20vh;
+  }
+  main .section-1 {
+    padding: 3rem;
+  }
+  main .section-1 .flex-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .section-1 .flex-section .text-section {
+    margin-left: 5rem;
+  }
+  main .section-1 .flex-section .text-section h2 {
+    font-size: 1.7rem;
+  }
+  main .section-1 .flex-section .text-section p {
+    padding-top: 1rem;
+    margin-right: 5rem;
+  }
+  main .button-container {
+    padding: 4rem 0;
+    text-align: center;
+  }
+  main .button-container h2 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .curve-top {
+    background-image: url("../images/bg-footer-top-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 20vh;
+    margin-top: 8rem;
+  }
+
+  .footer {
+    background: #00252e;
+    padding: 3rem;
+  }
+  .footer .attribution {
+    text-align: center;
+  }
+  .footer .footer-grid {
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    grid-gap: 4rem;
+  }
+  .footer .footer-grid .img-logo {
+    width: 20%;
+    filter: brightness(10%) invert(100%) contrast(200%) grayscale(100%);
+  }
+  .footer .footer-grid img {
+    width: 1rem;
+  }
+  .footer .footer-grid .text-footer .px-1 {
+    margin-right: 17rem;
+  }
+  .footer .footer-grid .text-footer p {
+    padding: 1rem 0;
+  }
+  .footer .footer-grid .text-footer span {
+    padding-left: 0.5rem;
+  }
+  .footer .footer-grid .social-icons {
+    color: #fff;
+    padding-top: 2rem;
+  }
+  .footer .footer-grid .social-icons i {
+    padding-right: 1rem;
+  }
+  .footer .footer-grid .subscribe {
+    margin-bottom: 10rem;
+  }
+  .footer .footer-grid .subscribe p {
+    padding-top: 1rem;
+    margin-right: 12rem;
+  }
+  .footer .footer-grid .subscribe .form {
+    padding-top: 1rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,192 @@
+@media (max-width: 1441px) {
+  // basic styling
+  body {
+    font-family: $opens-sans;
+    font-size: 14px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h2 {
+    font-family: $font-stack;
+  }
+  // styiling the hero container
+  .showcase  {
+    // styling the nav at the top
+    .top-showcase {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+    }
+    // container properties that has the mockup
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      padding: 3rem 0;
+
+      // text inside the container
+      .text-container {
+        margin-top: 3rem;
+        h2 {
+          font-size: 2.1rem;
+        }
+
+        p {
+          padding: 1rem 29rem;
+          margin-bottom: 2rem;
+        }
+      }
+      .img-container { margin: 5rem 0; }
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      .container-1 {
+        img {
+          width:2rem;
+          margin-right: 8rem;
+        }
+        h2 {font-size: 4rem;}
+        p {color: grey;}
+      }
+    }
+  }
+
+  main {
+    margin-top: 4rem;
+    .bg-top {
+      background-image: url('../images/bg-section-top-desktop-1.svg');
+      min-height: 20vh;
+    }
+
+    .bg-bottom  {
+      background-image: url('../images/bg-section-bottom-desktop-1.svg');
+      min-height: 20vh;
+    }
+
+    .background {
+      background-color: $pale_blue;
+      padding: 4rem;
+      .flex-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .text-box {
+          h2 { font-size: 1.7rem; }
+          p { padding-top: 1rem; }
+        }
+      }
+    }
+
+     // styling section -2 inherits treats for the first section
+     // and they differ in top and bottom image the curves
+    .section-2 {
+      .top {
+        background-image: url('../images/bg-section-top-desktop-2.svg');
+        min-height: 20vh;
+      }
+      .bottom {
+        background-image: url('../images/bg-section-bottom-desktop-2.svg');
+        min-height: 20vh;
+      }
+    }
+
+  // flowing conversation styling
+    .section-1 {
+      padding: 3rem;
+      .flex-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .text-section {
+          margin-left: 5rem;
+          h2 {font-size: 1.7rem;}
+          p {
+            padding-top: 1rem;
+            margin-right: 5rem;
+          }
+        }
+      }
+    }
+
+    .button-container {
+      padding: 4rem 0;
+      text-align: center;
+      h2 {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+       }
+    }
+  }
+
+  // top curve image in footer
+  .curve-top {
+    background-image: url('../images/bg-footer-top-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 20vh;
+    margin-top: 8rem;
+  }
+
+  // styiling the footer and its components
+  .footer {
+    background: $dark_cyan;
+    padding: 3rem;
+    .attribution {
+      text-align: center;
+    }
+
+    .footer-grid {
+      color: #fff;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      grid-gap: 4rem;
+      .img-logo {
+       width: 20%;
+        filter: brightness(10%) invert(100%) contrast(200%) grayscale(100%);
+      }
+      img { width: 1rem; }
+      .text-footer {
+       .px-1 { margin-right: 17rem; }
+        p {padding: 1rem 0;}
+        span {padding-left: .5rem;}
+      }
+      // social icons styling by adding a color, padding between its i elements
+      .social-icons {
+        color: #fff;
+        padding-top: 2rem;
+
+        i { padding-right: 1rem; }
+      }
+
+      // styling the newsletter container
+      .subscribe {
+        margin-bottom: 10rem;
+        p {
+          padding-top: 1rem;
+          margin-right: 12rem;
+        }
+        // form container styling contain input and button
+        .form { padding-top: 1rem; }
+      }
+    }
+  }
+}
